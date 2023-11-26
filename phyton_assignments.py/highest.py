@@ -11,12 +11,12 @@ if num > num1 and num2 :
 
    print (" highest is ", num)
 
-elif num1 > num2 and num:
+if num1 > num2 and num:
 
     print (" highest is ", num1)
 
 
-elif num2 > num1 and num:
+if num2 > num1 and num:
 
      print (" highest is ", num2)
 
