@@ -25,7 +25,6 @@ def add_all_third_element(elements):
 
 
 def add_all_element_in_order(elements):
-
     if len(elements) % 2 != 0:
         print(elements)
         list_to_return = [elements[len(elements) - 1], elements[0], elements[len(elements) // 2]]
@@ -33,12 +32,12 @@ def add_all_element_in_order(elements):
         return SumZ(list_to_return)
 
     print(elements)
-    value = elements[(len(elements) // 2)] + elements[(len(elements) // 2) - 1]
+    value = (elements[(len(elements) // 2)] + elements[(len(elements) // 2) - 1]) // 2
     print(elements)
     list_to_return = [elements[len(elements) - 1], elements[0], value]
     print(elements)
     return SumZ(list_to_return)
 
 
-a = list(range(1,7))
+a = list(range(1, 7))
 print(add_all_element_in_order(a))
